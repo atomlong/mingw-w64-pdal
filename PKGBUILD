@@ -16,8 +16,8 @@ _architectures="i686-w64-mingw32 x86_64-w64-mingw32"
 prepare() {
   cd "PDAL-$pkgver-src/"
   sed -i "s|get_git_head_revision|#|g" CMakeLists.txt
-  curl -L https://github.com/PDAL/PDAL/pull/3507.patch | patch -p1
   curl -L https://github.com/PDAL/PDAL/pull/3508.patch | patch -p1
+  curl -L https://github.com/PDAL/PDAL/pull/3507.patch | patch -p1
   curl -L https://github.com/PDAL/PDAL/pull/3509.patch | patch -p1
   curl -L https://github.com/PDAL/PDAL/pull/3511.patch | patch -p1
   curl -L https://github.com/PDAL/PDAL/pull/3512.patch | patch -p1
